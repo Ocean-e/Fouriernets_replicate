@@ -10,6 +10,7 @@ import math
 import numpy as np
 import pandas as pd
 import sys
+sys.path.append('/home/lihaiyue/data/snapshotscope/replicate') #TODO:change sys.path.append
 
 import torch
 import torch.cuda.comm
@@ -19,10 +20,10 @@ import torch.optim as optim
 from torch.cuda._utils import _get_device_index
 from collections import OrderedDict
 
-from ...utils.control import *
-from ...utils.output_control import *
-from ...utils.networks import *
-from ...utils.dataset import DiffuserMirflickrDataset
+from utils.control import *
+from utils.output_control import *
+from utils.networks import *
+from utils.dataset import DiffuserMirflickrDataset
 
 # check and set GPU
 if torch.cuda.is_available():
