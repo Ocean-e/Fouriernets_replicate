@@ -10,7 +10,7 @@ import math
 import numpy as np
 import pandas as pd
 import sys
-
+sys.path.append('/home/lihaiyue/data/snapshotscope/replicate') #TODO:change sys.path.append
 
 import torch
 import torch.cuda.comm
